@@ -1,4 +1,4 @@
-:root {
+ :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -196,6 +196,7 @@ fill: #2196F3;
   color: var(--white-accent-color);
   background-color: var(--accent-color);
 }
+/* модальное окно*/
 
 .backdrop {
   position: fixed;
@@ -250,7 +251,112 @@ fill: #2196F3;
   margin-right: 8px;
   margin-top: 8px;
 }
+.contact-form {
+width: 528px;
+min-height: 581px;
+margin: 0 auto;
+outline: 1px solid black;
+padding: 40px;
+}
+.contact-form-header {
+width: 100%;
+font-size: 20px;
+line-height: 1.15;
+margin-bottom: 12px;
+}
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-label {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
 
+color: var(--primary-text-color);
+padding-bottom: 4px;
+
+}
+.contact-form-input {
+  display: block;
+  height: 40px;
+  padding-left: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.contact-form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contact-form-textarea {
+resize: none;
+width: 448px;
+height: 120px;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 16px;
+padding-right: 16px;
+margin-bottom: 20px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+}
+.contact-form-textarea::placeholder {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+} 
+
+.contact-form-accept-rules {
+  margin-bottom: 30px;
+  margin-left: 11px;
+  margin-right: 11px;
+
+}
+.accept-rules-label {
+  width: 100%
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: var(--primary-text-color);
+}
+.agreement-link {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71px;
+
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+
+color: var(--accent-color)
+}
+.submit-button {
+  display: flex;
+  border-radius: 4px;
+  padding: 10px 55px;
+  margin: auto;
+  margin-top: 20px;
+  min-width: 200px;
+  border: 1px solid;
+  border-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  align-items: center;
+  padding-right: auto;
+  color: var(--white-accent-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
 /* О нас*/
 .section {
   padding-top: 94px;
